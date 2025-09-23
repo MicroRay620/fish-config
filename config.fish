@@ -8,15 +8,22 @@ if test -d ~/.linuxbrew/bin
 else if test -d /home/linuxbrew/.linuxbrew/bin
     set -gx PATH /home/linuxbrew/.linuxbrew/bin $PATH
 end
+
 set -gx EDITOR "nvim"
 set -gx VISUAL "nvim"
 set -U fish_user_paths /home/ruby/.local/bin $fish_user_paths
 set -x HYFETCH_DONT_WARN_RUST 1
 
-set -l time $(printf "%(%x | %X)T")
+# set -l time $(printf "%T(%x | %X)")
 
 # use this for random pride flag
 set -l RANDOM (date +%s)
-set -a flags femme transgender transfeminine lesbian sapphic finsexual
+set -a flags femme transgender transfeminine lesbian sapphic finsexual femboy gendernonconforming2 plural
+# Femboy was added for Imp (an alter of mine)
 set -l use_flag $flags[(math $RANDOM % (count $flags) + 1)]
 hyfetch -b fastfetch -p "$use_flag"
+
+# Alias
+alias neobim=nvim
+alias dir=ls 
+alias goto=cd 
