@@ -1,6 +1,5 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    
+    # Commands to run in interactive sessions can go here 
 end
 
 if test -d ~/.linuxbrew/bin
@@ -19,6 +18,7 @@ set -x HYFETCH_DONT_WARN_RUST 1
 # use this for random pride flag
 set -l RANDOM (date +%s)
 set -a flags femme transgender transfeminine lesbian sapphic finsexual femboy gendernonconforming2 plural
+# Femme flag is a custom flag that I made
 # Femboy was added for Imp (an alter of mine)
 set -l use_flag $flags[(math $RANDOM % (count $flags) + 1)]
 hyfetch -b fastfetch -p "$use_flag"
@@ -26,4 +26,9 @@ hyfetch -b fastfetch -p "$use_flag"
 # Alias
 alias neobim=nvim
 alias dir=ls 
-alias goto=cd 
+alias goto=cd
+# alias nf=neofetch # I do not have neofetch installed
+alias ff=fastfetch
+alias hf=hyfetch 
+alias aagl="flatpak run moe.launcher.an-anime-game-launcher"
+
