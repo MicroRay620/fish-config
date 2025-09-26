@@ -31,4 +31,4 @@ alias goto=cd
 alias ff=fastfetch
 alias hf=hyfetch 
 alias aagl="flatpak run moe.launcher.an-anime-game-launcher"
-
+alias restart=reboot
