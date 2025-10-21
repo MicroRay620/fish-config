@@ -33,6 +33,13 @@ function Aliases
     alias restart=reboot
     alias fishconf="cd ~/.config/fish & nvim config.fish"
     alias nvimconf="cd ~/.config/nvim & nvim"
+    alias zshconf="cd ~/.config/zsh & nvim .zshrc"
+    alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+    alias frun=fish
+    alias brun=bash
+    alias progingstuff="cd /media/BackupDrive/ProgrammingStuff/CodeRepositories"
+    alias siren-blood="cd /media/BackupDrive/Documents/Books/Siren\ \&\ Blood/"
+    alias obsidian-notes="cd /media/BackupDrive/Document/Obsidian/"
 end
 
 # Function Calls
