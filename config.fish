@@ -23,6 +23,7 @@ end
 
 # Alias
 function Aliases
+    set -a DOCUMENTS "/media/BackupDrive/Documents" # Added this for when the code gets expanded and more complex
     alias neobim=nvim
     alias dir=ls 
     alias goto=cd
@@ -39,7 +40,7 @@ function Aliases
     alias brun=bash
     alias progingstuff="cd /media/BackupDrive/ProgrammingStuff/CodeRepositories"
     alias siren-blood="cd /media/BackupDrive/Documents/Books/Siren\ \&\ Blood/"
-    alias obsidian-notes="cd /media/BackupDrive/Document/Obsidian/"
+    alias obsidian-notes="cd /media/BackupDrive/Documents/Obsidian/"
 end
 
 # Function Calls
